@@ -19,7 +19,7 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       # The SwiftUI app needs full Xcode (the SwiftUI macro plugin isn't in the Command Line Tools).
       - name: Select latest stable Xcode
@@ -33,7 +33,7 @@ jobs:
           swift --version
 
       - name: Cache SwiftPM build
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .build
           key: spm-${{ runner.os }}-${{ hashFiles('Package.swift', 'Package.resolved') }}-${{ hashFiles('Sources/**/*.swift') }}
@@ -54,7 +54,7 @@ jobs:
         run: ditto -c -k --keepParent "build/SMS Backup Viewer.app" "build/SMS-Backup-Viewer.zip"
 
       - name: Upload app artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: SMS-Backup-Viewer-${{ github.sha }}
           path: build/SMS-Backup-Viewer.zip
