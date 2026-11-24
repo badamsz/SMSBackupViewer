@@ -18,6 +18,8 @@ plus a bundled local **MCP server** so Claude (or any MCP client) can search you
 - Everything stays on your Mac. Backups are indexed into
   `~/Library/Application Support/SMSBackupViewer/messages.sqlite`, and the original XML files are never modified.
 
+![Example Screenshot](docs/screenshot.png)
+
 ## Build
 
 Requirements: macOS 14 (Sonoma) or later and **Xcode** (open it once after installing). The Command Line Tools alone
