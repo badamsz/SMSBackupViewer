@@ -1,0 +1,23 @@
+# SwiftPM / Xcode
+.build/
+.swiftpm/
+*.xcodeproj/
+xcuserdata/
+DerivedData/
+Package.resolved
+
+# App build output (build-app.sh)
+build/
+
+# macOS
+.DS_Store
+
+# Never commit real backups or databases; only the synthetic files in Samples/ are tracked
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+sms-*.xml
+calls-*.xml
+*.zip
+!Samples/*.xml
+!Samples/*.zip

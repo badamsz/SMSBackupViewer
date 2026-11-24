@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<!--File Created By SMS Backup & Restore v10.20.002 on 19/11/2026 21:00:00-->
+<calls count="4" backup_set="sample" backup_date="1700000000000" type="full">
+  <call number="+12075550100" duration="312" date="1699996400000" type="1" presentation="1" subscription_id="1" post_dial_digits="" subscription_component_name="x" readable_date="x" contact_name="Alex Rivera" />
+  <call number="2075550123" duration="0" date="1699998200000" type="3" presentation="1" subscription_id="1" readable_date="x" contact_name="Sam Chen" />
+  <call number="+12075550123" duration="95" date="1699998800000" type="2" presentation="1" subscription_id="1" readable_date="x" contact_name="Sam Chen" />
+  <call number="+18005550000" duration="0" date="1699999400000" type="6" presentation="1" subscription_id="1" readable_date="x" contact_name="(Unknown)" />
+</calls>
