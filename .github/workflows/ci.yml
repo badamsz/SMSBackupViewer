@@ -19,7 +19,7 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       # The SwiftUI app needs full Xcode (the SwiftUI macro plugin isn't in the Command Line Tools).
       - name: Select latest stable Xcode
